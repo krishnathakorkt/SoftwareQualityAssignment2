@@ -21,46 +21,95 @@ namespace Assignment2Project
             //Parameterized Constructor -that will store length and width according to parameter
             public Rectangle(int length, int width)
             {
-                this.length = length;
-                this.width = width;
+                if (length < 0 || width < 0)
+                {
+                    throw new Exception("Length and Width must be greater than zero.");
+                }
+                else
+                {
+                    this.length = length;
+                    this.width = width;
+                }
             }
 
             //return length value
             public int GetLength()
             {
+                if (length < 0)
+                {
+                    throw new Exception("Length must be greater than zero.");
+                }
                 return length;
             }
 
             //return length value
             public int SetLength(int length)
             {
-                this.length = length;
-                return length;
+                if (length < 0)
+                {
+                    throw new Exception("Length must be greater than zero.");
+                }
+                else
+                {
+                    this.length = length;
+                    return length;
+                }
             }
 
             //set width value
             public int SetWidth(int width)
             {
+            if (width < 0)
+            {
+                throw new Exception("Width must be greater than zero.");
+            }
+            else
+            {
                 this.width = width;
                 return width;
+            }
+           
             }
 
             //return width value
             public int GetWidth()
             {
+            if (width < 0)
+            {
+                throw new Exception("Length must be greater than zero.");
+            }
+            else
+            {
                 return width;
+            }
             }
             
             //calculate perimeter and return it
             public int GetPerimeter()
             {
-                return (2 * (length + width));
+                if (length < 0 || width < 0)
+                {
+                    throw new Exception("Length and Width must be greater than zero.");
+                }
+                else
+                {
+                    return (2 * (length + width));
+                }
+            
             }
             
             //calculate area and return it
             public int GetArea()
             {
-                return (length * width);
+                if (length < 0 || width < 0)
+                {
+                    throw new Exception("Length and Width must be greater than zero.");
+                }
+                else
+                {
+                    return (length * width);
+                }
+            
             }
         }
 }
