@@ -11,7 +11,7 @@ namespace Assignment2Project.Tests
     [TestClass()]
     public class RectangleTests
     {
-        
+        //this will check that length and width value is 1 or not - default constructor
         [TestMethod()]
         public void RectangleTest()
         {
@@ -23,10 +23,11 @@ namespace Assignment2Project.Tests
             Assert.AreEqual(1, rect.GetWidth());
         }
 
+        //this will check that length and width value is 5 or not - parameterized constructor
         [TestMethod()]
         public void RectangleTest1()
         {
-            //Arrange & Act - Default Constructor
+            //Arrange & Act - Parameterized Constructor
             Rectangle rect = new Rectangle(5,5);
 
             //Assert
@@ -34,6 +35,7 @@ namespace Assignment2Project.Tests
             Assert.AreEqual(5, rect.GetWidth());
         }
 
+        //this will check that length value is 1 or not - getlength
         [TestMethod()]
         public void GetLengthTest()
         {
@@ -46,7 +48,7 @@ namespace Assignment2Project.Tests
             //Assert
             Assert.AreEqual(1,result);
         }
-
+        //this will check that width value is 1 or not - getwidth
         [TestMethod()]
         public void GetWidthTest()
         {
@@ -60,6 +62,7 @@ namespace Assignment2Project.Tests
             Assert.AreEqual(1, result);
         }
 
+        //this will check that length value is 5 or not -setlength and getlength
         [TestMethod()]
         public void SetLengthTest()
         {
@@ -70,10 +73,10 @@ namespace Assignment2Project.Tests
             rect.SetLength(5);
 
             //Assert
-          // Assert.AreEqual(5,rect.GetLength());
+            Assert.AreEqual(5,rect.GetLength());
         }
 
-
+        //this will check that width value is 5 or not -setwidth and setwidth
         [TestMethod()]
         public void SetWidthTest()
         {
@@ -87,6 +90,7 @@ namespace Assignment2Project.Tests
             Assert.AreEqual(5, rect.GetWidth());
         }
 
+        //calculate perimeter according to parameterized constructor value and check 
         [TestMethod()]
         public void GetPerimeterTest()
         {
@@ -100,6 +104,7 @@ namespace Assignment2Project.Tests
             Assert.AreEqual(8,perimeter);
         }
 
+        //calculate area according to parameterized constructor value and check 
         [TestMethod()]
         public void GetAreaTest()
         {
