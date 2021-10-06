@@ -57,7 +57,7 @@ namespace Assignment2Project
                         tlength = Console.ReadLine();
                         continueAsk = (int.TryParse(tlength, out length) && (length > 0));
                         if (!continueAsk)
-                            Console.WriteLine("The Rectangle Length must be > 0 and a positive integer.");
+                            Console.WriteLine("The Rectangle Length must be > 0");
                     }
                     while (!continueAsk);
                     rectangle.SetLength(length);
@@ -74,7 +74,7 @@ namespace Assignment2Project
                         twidth = Console.ReadLine();
                         continueAsk = (int.TryParse(twidth, out width ) && (width > 0));
                         if (!continueAsk)
-                            Console.WriteLine("The Rectangle Width must be > 0 and a positive integer.");
+                            Console.WriteLine("The Rectangle Width must be > 0.");
                     }
                     while (!continueAsk);
                     rectangle.SetWidth(width);
