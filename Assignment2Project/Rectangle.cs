@@ -8,8 +8,6 @@ namespace Assignment2Project
 {
     public class Rectangle
     {
-        public class Rectangle
-        {
             private int length { get; set; }
             private int width { get; set; }
 
@@ -51,5 +49,4 @@ namespace Assignment2Project
                 return length * width;
             }
         }
-    }
 }
