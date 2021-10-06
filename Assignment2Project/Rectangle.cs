@@ -42,11 +42,11 @@ namespace Assignment2Project
             }
             public int GetPerimeter()
             {
-                return 2 * (length + width);
+                return (2 * (length + width));
             }
             public int GetArea()
             {
-                return length * width;
+                return (length * width);
             }
         }
 }
